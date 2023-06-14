@@ -42,8 +42,8 @@ device_id = "RF8M827WX7H" #oneplus
 
 epoch = 20 # how man reciepts there are
 
-NAMEreszd_imgs_path = '/home/valiantlynx/Downloads/reciepts/after'
-NAMEunreszd_imgs_path = '/home/valiantlynx/Downloads/reciepts/before'
+NAMEreszd_imgs_path = '/home/valiantlynx/projects/adb_fiken/reciepts/after'
+NAMEunreszd_imgs_path = '/home/valiantlynx/projects/adb_fiken/reciepts/before'
 
 for pathdate in os.listdir(NAMEreszd_imgs_path):
     full_pathdun = os.path.join(NAMEreszd_imgs_path, pathdate)
@@ -60,7 +60,7 @@ for pathdate in os.listdir(NAMEunreszd_imgs_path):
 class f:
     def __init__(self, i):
         self.i = int(i)
-        self.adb =  r"/home/valiantlynx/Downloads/adb_fiken/platform-tools/adb"
+        self.adb =  r"/home/valiantlynx/projects/adb_fiken/platform-tools/adb"
         #os.system(f'C:\minfuel\adb\bot\scrcpy-win64-v1.19\adb.exe shell am start -n com.raskebiler.drivstoff.appen/.activities.SplashActivity ') #launch app
   
     def open_gallery(self, seconds):
